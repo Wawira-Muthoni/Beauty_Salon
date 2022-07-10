@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Beauty_Salon">
         <activity
+            android:name=".HairCareActivity"
+            android:exported="false" />
+        <activity
             android:name=".ServicesActivity"
             android:exported="false" />
         <activity

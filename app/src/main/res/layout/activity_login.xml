@@ -22,7 +22,9 @@
             android:id="@+id/etEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email" />
+            android:backgroundTint="#B500BCD4"
+            android:hint="Email"
+            android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -40,7 +42,9 @@
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password" />
+            android:backgroundTint="#C100BCD4"
+            android:hint="Password"
+            android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -49,11 +53,12 @@
         android:layout_height="39dp"
         android:layout_marginTop="76dp"
         android:text="Don't have an account? Sign Up"
+        android:textColor="#D8C3C3"
         android:textColorHint="#E3D5D5"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tilPassword"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.015" />
 </androidx.constraintlayout.widget.ConstraintLayout>

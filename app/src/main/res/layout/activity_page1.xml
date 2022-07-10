@@ -6,99 +6,81 @@
     android:layout_height="match_parent"
     tools:context=".Page1Activity">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilServices"
-        android:layout_width="371dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="16dp"
+    <Button
+        android:id="@+id/btnServices"
+        android:layout_width="159dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#C600BCD4"
+        android:text="Services"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etServices"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="           Services             "
-            android:textSize="34sp" />
-    </com.google.android.material.textfield.TextInputLayout>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imgServices"
-        android:layout_width="350dp"
-        android:layout_height="96dp"
+        android:layout_width="0dp"
+        android:layout_height="122dp"
         android:layout_marginStart="16dp"
-        android:scaleType="fitCenter"
-        android:adjustViewBounds="true"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="14dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tilServices"
-        app:srcCompat="@drawable/ajsks" />
+        app:layout_constraintTop_toBottomOf="@+id/btnServices"
+        app:srcCompat="@drawable/ajs" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilProducts"
-        android:layout_width="374dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
+    <Button
+        android:id="@+id/btnProducts"
+        android:layout_width="166dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#C100BCD4"
+        android:text="Products"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgServices">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etProducts"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="           Products"
-            android:textSize="34sp" />
-    </com.google.android.material.textfield.TextInputLayout>
+        app:layout_constraintTop_toBottomOf="@+id/imgServices" />
 
     <ImageView
         android:id="@+id/imgProducts"
-        android:layout_width="371dp"
-        android:layout_height="91dp"
+        android:layout_width="0dp"
+        android:layout_height="111dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="9dp"
+        android:layout_marginTop="11dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tilProducts"
-        app:srcCompat="@drawable/products" />
+        app:layout_constraintTop_toBottomOf="@+id/btnProducts"
+        app:srcCompat="@drawable/sp" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilSpecialist"
-        android:layout_width="374dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+    <Button
+        android:id="@+id/btnSpecialist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#E200BCD4"
+        android:text="Specialist"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgProducts">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etSpecialist"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="           Specialist"
-            android:textSize="34sp" />
-    </com.google.android.material.textfield.TextInputLayout>
+        app:layout_constraintTop_toBottomOf="@+id/imgProducts" />
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="379dp"
-        android:layout_height="125dp"
+        android:id="@+id/imgSpecialist"
+        android:layout_width="0dp"
+        android:layout_height="137dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="156dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tilSpecialist"
-        app:srcCompat="@drawable/amkso" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSpecialist"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ss" />
 </androidx.constraintlayout.widget.ConstraintLayout>

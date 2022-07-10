@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HairCareActivity">
+
+    <ImageView
+        android:id="@+id/imgWig"
+        android:layout_width="179dp"
+        android:layout_height="171dp"
+        android:layout_marginEnd="13dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgHairCut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbackarrow"
+        app:srcCompat="@drawable/crochets" />
+
+    <ImageView
+        android:id="@+id/imgbackarrow"
+        android:layout_width="54dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="355dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+    <ImageView
+        android:id="@+id/imgHairCut"
+        android:layout_width="189dp"
+        android:layout_height="171dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/haircut" />
+
+    <ImageView
+        android:id="@+id/imgCrochet"
+        android:layout_width="189dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgBraid"
+        app:layout_constraintTop_toBottomOf="@+id/tvHaircut"
+        app:srcCompat="@drawable/wig" />
+
+    <ImageView
+        android:id="@+id/imgBraid"
+        android:layout_width="181dp"
+        android:layout_height="176dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="7dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgCrochet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCrochet"
+        app:srcCompat="@drawable/braids" />
+
+    <ImageView
+        android:id="@+id/imgBlowDry"
+        android:layout_width="185dp"
+        android:layout_height="154dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBraid"
+        app:srcCompat="@drawable/blowdry" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="182dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWig"
+        app:srcCompat="@drawable/ht" />
+
+    <TextView
+        android:id="@+id/tvCrochet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="2dp"
+        android:text="Crochet"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgWig" />
+
+    <TextView
+        android:id="@+id/tvHaircut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="109dp"
+        android:layout_marginEnd="84dp"
+        android:text="Hair Cut"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvCrochet"
+        app:layout_constraintTop_toBottomOf="@+id/imgHairCut" />
+
+    <TextView
+        android:id="@+id/tvWig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="109dp"
+        android:text="Wig"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgCrochet" />
+
+    <TextView
+        android:id="@+id/tvBraid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="144dp"
+        android:text="Braids"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvWig"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBraid" />
+
+    <TextView
+        android:id="@+id/tvBlowdry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="32dp"
+        android:text="BlowDry"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvTreatment"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBlowDry"
+        app:layout_constraintVertical_bias="0.368" />
+
+    <TextView
+        android:id="@+id/tvTreatment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="75dp"
+        android:text="Treatment"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+</androidx.constraintlayout.widget.ConstraintLayout>
